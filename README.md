@@ -1,2 +1,2 @@
 # rss-feed-get-task
-get RCC Feed URL
+get RSS Feed URL
