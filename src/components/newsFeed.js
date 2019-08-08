@@ -7,18 +7,6 @@ class NewsFeed extends Component {
         super(props);
         this.state = {
             data: [],
-            images: [
-                {url: require('../img/01.png')},
-                {url: require('../img/02.jpg')},
-                {url: require('../img/03.jpg')},
-                {url: require('../img/03.jpg')},
-                {url: require('../img/05.png')},
-                {url: require('../img/06.png')},
-                {url: require('../img/07.png')},
-                {url: require('../img/08.png')},
-                {url: require('../img/09.png')},
-                {url: require('../img/10.png')},
-            ],
             query: ""
         };
     }
