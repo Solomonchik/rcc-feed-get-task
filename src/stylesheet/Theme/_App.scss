@@ -1,0 +1,71 @@
+.headerCont {
+  width: 100vw;
+  height: 410px;
+  position: relative;
+  box-shadow: 0 0 2px 1px rgba(182, 182, 182, 0.3);
+  background: url(https://dev98.de/wp-content/uploads/2017/01/cropped-ctTJUiqwzSWMLaw_5oneNdpqFKTe9Jen0WF-SWl15FkpX92IB.png)
+    no-repeat scroll top;
+  background-size: cover;
+  margin-bottom: 32px;
+  margin-top: 50px;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    text-decoration: none;
+    h1 {
+      background-clip: border-box;
+      background-color: rgb(255, 255, 255);
+      background-image: none;
+      background-origin: padding-box;
+      background-position: 0 0;
+      background-position-x: 0;
+      background-position-y: 0;
+      background-repeat: repeat;
+      background-size: auto;
+      box-sizing: border-box;
+      color: rgb(0, 0, 0);
+      font-family: "Lato", sans-serif;
+      font-size: 63px;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 10px;
+      line-height: 69.3px;
+      margin: 0;
+      opacity: 0.8;
+      text-align: center;
+      text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
+        rgba(0, 0, 0, 0.5) 1px 1px 1px;
+      &::after {
+        background: #ffffff;
+        content: "";
+        height: 2px;
+        display: block;
+        width: 20%;
+        margin: 10px auto;
+      }
+    }
+    h2 {
+      background: white;
+      background-size: auto;
+      box-sizing: border-box;
+      clear: both;
+      color: rgb(0, 0, 0);
+      font-family: "Lato", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 5px;
+      line-height: 19.8px;
+      margin-bottom: 0;
+      margin-top: 0;
+      opacity: 0.8;
+      padding: 3.6px 0 3.6px 0;
+      text-align: center;
+      text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
+        rgba(0, 0, 0, 0.5) 1px 1px 1px;
+      text-transform: capitalize;
+    }
+  }
+}

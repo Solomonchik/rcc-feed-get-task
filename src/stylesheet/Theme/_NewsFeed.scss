@@ -216,23 +216,6 @@
           text-align: center;
           text-transform: uppercase;
           a {
-            background-color: rgb(255, 255, 255);
-            background-image: none;
-            border-bottom-color: rgb(30, 115, 190);
-            border-bottom-style: solid;
-            border-bottom-width: 1px;
-            border-image-outset: 0;
-            border-image-repeat: stretch;
-            border-image-source: none;
-            border-left-color: rgb(33, 33, 33);
-            border-left-style: none;
-            border-left-width: 0;
-            border-right-color: rgb(33, 33, 33);
-            border-right-style: none;
-            border-right-width: 0;
-            border-top-color: rgb(33, 33, 33);
-            border-top-style: none;
-            border-top-width: 0;
             box-sizing: border-box;
             color: rgb(33, 33, 33);
             cursor: pointer;
@@ -526,13 +509,13 @@
         box-sizing: border-box;
         color: rgb(114, 114, 114);
         font-family: "Source Sans Pro", sans-serif;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
         line-height: 22.85px;
         a {
           color: rgb(114, 114, 114);
           text-decoration: none;
-          margin-right: 3px;
+          margin-right: 1px;
           line-height: 1.7;
           display: flex;
           align-self: baseline;
@@ -642,6 +625,91 @@
               color: #1e73be;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .newsFeedContainer {
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    .primaryCont {
+      margin: auto;
+      padding: 0;
+      min-width: 732px;
+      .itemCont {
+        h2 {
+          margin: auto;
+          font-size: 18px;
+        }
+        .textContainer {
+          width: 100%;
+          min-width: 700px;
+          font-size: 16px;
+          padding: 0 20px;
+          margin-bottom: 32px;
+          p {
+            margin-bottom: 32px;
+          }
+        }
+        .divCont {
+          margin-bottom: 32px;
+        }
+      }
+    }
+    .secondaryCont {
+      margin: auto;
+      width: 100%;
+      min-width: 732px;
+      .firstItemInCont {
+        width: 100%;
+        min-width: 732px;
+        .searchForm {
+          width: 100%;
+          min-width: 678px;
+          label {
+            width: 100%;
+            input {
+              width: 100%;
+              min-width: 649px;
+            }
+          }
+          .searchForm {
+            width: 35px;
+          }
+        }
+      }
+      .RecentPostCont {
+        width: 100%;
+        min-width: 732px;
+        .ulForRecentPostCont {
+          min-width: 650px;
+        }
+      }
+      .asideContArchive {
+        width: 100%;
+        max-width: 680px;
+        ul {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          min-width: 650px;
+        }
+      }
+      .asideContSocial {
+        ul {
+          margin: auto;
+          min-width: 650px;
+        }
+      }
+      .asideContEvents {
+        ul {
+          margin: auto;
+          min-width: 650px;
         }
       }
     }

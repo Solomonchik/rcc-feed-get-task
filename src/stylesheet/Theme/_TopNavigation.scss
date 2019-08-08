@@ -1,0 +1,64 @@
+.topNavigationCont {
+  width: 100%;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  .topNavigationSubCont {
+    height: 50px;
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .navBarBrand {
+      h1 {
+        width: 100%;
+        max-width: 200px;
+        color: #424242;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+    }
+
+    ul {
+      padding: 0;
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 550px;
+      margin-left: auto;
+      text-align: center;
+      align-items: center;
+      li {
+        padding: 0;
+        line-height: 1.42857143;
+        a {
+          display: block;
+          padding: 10px 0 10px 0;
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: 400;
+          font-style: normal;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topNavigationCont {
+    .topNavigationSubCont {
+      max-width: 710px;
+    }
+  }
+}
