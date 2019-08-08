@@ -48,7 +48,7 @@
         box-sizing: border-box;
         color: rgb(33, 33, 33);
         font-family: "Lato", sans-serif;
-        font-size: 30px;
+        //font-size: 30px;
         font-style: normal;
         font-weight: 400;
         letter-spacing: 2px;
@@ -215,6 +215,7 @@
           overflow-wrap: break-word;
           text-align: center;
           text-transform: uppercase;
+
           a {
             box-sizing: border-box;
             color: rgb(33, 33, 33);
@@ -236,6 +237,11 @@
             vertical-align: middle;
             white-space: nowrap;
             -moz-user-select: none;
+            border-bottom: 1px solid #1e73be;
+            &:hover {
+              color: white;
+              background: #1e73be;
+            }
           }
         }
       }
@@ -642,9 +648,15 @@
       padding: 0;
       min-width: 732px;
       .itemCont {
+        .imgDiv {
+          height: 432px;
+        }
         h2 {
           margin: auto;
           font-size: 18px;
+          a {
+            font-size: 26px;
+          }
         }
         .textContainer {
           width: 100%;
@@ -698,6 +710,120 @@
           padding: 0;
           width: 100%;
           min-width: 650px;
+        }
+      }
+      .asideContSocial {
+        ul {
+          margin: auto;
+          min-width: 650px;
+        }
+      }
+      .asideContEvents {
+        ul {
+          margin: auto;
+          min-width: 650px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .newsFeedContainer {
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    .primaryCont {
+      margin: auto;
+      padding: 0;
+      min-width: 352px;
+      .itemCont {
+        .imgDiv {
+          height: 182px;
+          text-align: center;
+          h2 {
+            text-align: center;
+            width: 100%;
+          }
+        }
+        h2 {
+          margin: auto;
+          width: 100%;
+          text-align: center;
+          a {
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 2px;
+            line-height: 33px;
+            overflow-wrap: break-word;
+          }
+        }
+
+        .textContainer {
+          width: 100%;
+          min-width: 352px;
+          font-size: 16px;
+          padding: 0 20px;
+          margin-bottom: 32px;
+          p {
+            margin-bottom: 32px;
+          }
+        }
+        .divCont {
+          margin-bottom: 32px;
+          text-align: center;
+          h5 {
+            &::after {
+              text-align: center;
+              margin: 10px auto;
+            }
+          }
+
+        }
+      }
+    }
+    .secondaryCont {
+      margin: auto;
+      width: 100%;
+      min-width: 352px;
+      .firstItemInCont {
+        width: 100%;
+        min-width: 352px;
+        .searchForm {
+          width: 100%;
+          min-width: 300px;
+          label {
+            width: 100%;
+            input {
+              width: 100%;
+              min-width: 270px;
+            }
+          }
+          .searchForm {
+            width: 35px;
+          }
+        }
+      }
+      .RecentPostCont {
+        width: 100%;
+        min-width: 352px;
+        .ulForRecentPostCont {
+          min-width: 280px;
+        }
+      }
+      .asideContArchive {
+        width: 100%;
+        max-width: 352px;
+        padding: 0;
+        h4 {
+          padding: 16px 16px 0 16px;
+        }
+        ul {
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          min-width: 280px;
         }
       }
       .asideContSocial {

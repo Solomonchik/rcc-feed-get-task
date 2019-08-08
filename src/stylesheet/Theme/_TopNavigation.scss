@@ -1,3 +1,33 @@
+@keyframes burgerFadeThirdLine {
+  from {
+    transform: translate(0, 0) rotate(0);
+  }
+  to {
+    transform: translate(-5px, -6px) rotate(45deg);
+  }
+}
+
+@keyframes burgerFadeFirstLine {
+  from {
+    transform: translate(0, 0) rotate(0);
+  }
+  to {
+    transform: translate(-5px, 6px) rotate(-45deg);
+  }
+}
+
+@keyframes burgerFadeSecondLine {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
+
+
 .topNavigationCont {
   width: 100%;
   background: white;
@@ -7,6 +37,7 @@
   right: 0;
   z-index: 1;
   box-sizing: border-box;
+
   .topNavigationSubCont {
     height: 50px;
     width: 100%;
@@ -14,6 +45,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+
     .navBarBrand {
       h1 {
         width: 100%;
@@ -39,9 +71,11 @@
       margin-left: auto;
       text-align: center;
       align-items: center;
+
       li {
         padding: 0;
         line-height: 1.42857143;
+
         a {
           display: block;
           padding: 10px 0 10px 0;
@@ -52,6 +86,10 @@
         }
       }
     }
+
+    .burger {
+      display: none;
+    }
   }
 }
 
@@ -59,6 +97,79 @@
   .topNavigationCont {
     .topNavigationSubCont {
       max-width: 710px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .topNavigationCont {
+    width: 100%;
+    max-width: 375px;
+
+    .topNavigationSubCont {
+      width: 352px;
+
+      .navBarBrand {
+        //margin-left: 30px;
+      }
+
+      ul {
+        display: none;
+      }
+
+      .burger {
+        position: absolute;
+        padding: 5px;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20px;
+        width: 30px;
+        border: 1px solid #727272;
+        border-radius: 4px;
+        cursor: pointer;
+
+        .lineBurger {
+          margin: auto;
+          width: 20px;
+          height: 2px;
+          background: #727272;
+        }
+      }
+
+      .burgerActive {
+        background: #727272;
+        .lineBurger {
+          background: white;
+        }
+      }
+
+      .ulItems {
+        margin: 0;
+        width: 375px;
+        max-height: 400px;
+        top: 50px;
+        left: 0;
+        background: white;
+        display: flex;
+        position: fixed;
+        transform: translateY(0);
+        transition: transform 1ms ease-in;
+        ul {
+          margin: 0;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      .close {
+        transform: translateY(-450px);
+      }
     }
   }
 }

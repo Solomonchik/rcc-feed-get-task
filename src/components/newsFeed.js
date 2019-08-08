@@ -60,8 +60,8 @@ class NewsFeed extends Component {
                             return (
                                 <div className={"itemCont"} key={index}>
                                     <div className={'imgDiv'}>
-                                        <h1>Dass ist nur Placeholder und fuer die Demonstration ist es reicht)</h1>
-                                        <h2>Ich hoffe)))</h2>
+                                        <h1>Placeholder</h1>
+                                        <h2>___________</h2>
                                     </div>
                                     <h2>
                                         <a
@@ -100,15 +100,6 @@ class NewsFeed extends Component {
                                                 .replace("Read More", "")
                                                 .replace("&#8211;", "-")
                                                 .replace("&#8211;", "-")
-                                                .replace("[crayon-5d4ad5a18c207405608632-i/]", "*.dev")
-                                                .replace("[crayon-5d4ad5a18c20d003109496-i/]", "*.dev")
-                                                .replace("[crayon-5d4ad5a18c210189838701-i/]", "*.dev")
-                                                .replace(
-                                                    "[crayon-5d4ad5a18c212054139701-i/]",
-                                                    ".localhost"
-                                                )
-                                                .replace("[crayon-5d4ad5a18af33608065307/]", "")
-                                                .replace("[crayon-5d4ad5a18cab7194386639/]", '"SOME LINK MUST BE HERE"')
                                             }
                                         </p>
                                         <p className={'textSubContTwo'}><a href={oneItem.link}>Read More</a></p>
