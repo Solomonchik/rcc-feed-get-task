@@ -13,7 +13,7 @@ class App extends Component {
           <div className={'sireBranding'}>
               <a href="/#" >
                   <h1>DEV98</h1>
-                  <h2>A Blog Of The Nety98 Developer Team</h2>
+                  <h2>A Blog Of The Netz98 Developer Team</h2>
               </a>
           </div>
         </header>
