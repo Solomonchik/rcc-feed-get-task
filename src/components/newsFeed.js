@@ -35,15 +35,10 @@ class NewsFeed extends Component {
 
     render() {
         let rssObj = this.state.data;
-        // let images = this.state.images;
 
         let newRssObj = [...rssObj];
         let formatNewRpsObj = newRssObj.splice(5, 9);
         console.log('newRssObj', formatNewRpsObj);
-        // if (newRssObj) {
-        //     newRssObj = rssObj.reduce(5, 9);
-        //     console.log('newRssObj', newRssObj);
-        // }
 
 
         return (
